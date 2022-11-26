@@ -1,0 +1,22 @@
+#Creating the initial table
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, color TEXT, quantity INTEGER, price REAL);
+
+#Adding Products and STATS to the table
+INSERT INTO clothes VALUES (1, "polo", "red", 2, 25.50);
+INSERT INTO clothes VALUES (2, "polo", "blue", 3, 25.50);
+INSERT INTO clothes VALUES (3, "polo", "orange", 4, 25.50);
+INSERT INTO clothes VALUES (4, "polo", "green", 5, 25.50);
+INSERT INTO clothes VALUES (5, "polo", "purple", 6, 25.50);
+INSERT INTO clothes VALUES (6, "short", "red", 2, 15.50);
+INSERT INTO clothes VALUES (7, "short", "orange", 3, 15.50);
+INSERT INTO clothes VALUES (8, "short", "blue", 4, 15.50);
+INSERT INTO clothes VALUES (9, "short", "green", 5, 15.50);
+INSERT INTO clothes VALUES (10, "short", "purple", 6, 15.50);
+INSERT INTO clothes VALUES (11, "sock", "red", 2, 25.50);
+INSERT INTO clothes VALUES (12, "sock", "orange", 3, 5.50);
+INSERT INTO clothes VALUES (13, "sock", "blue", 4, 5.50);
+INSERT INTO clothes VALUES (14, "sock", "green", 5, 5.50);
+INSERT INTO clothes VALUES (15, "sock", "purple", 6, 5.50);
+
+#Creating an initial query of how many total Polo's are in stock
+SELECT SUM(quantity) FROM clothes WHERE name = "polo";
